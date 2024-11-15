@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SS_form_1</class>
+ <widget class="QWidget" name="SS_form_1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>243</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form1</string>
+  </property>
+  <widget class="QPushButton" name="pb_changeText">
+   <property name="geometry">
+    <rect>
+     <x>271</x>
+     <y>200</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Change Text</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_changedText">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>361</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Welcome! Click Change Text button to change text.</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
