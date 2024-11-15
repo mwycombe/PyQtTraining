@@ -22,11 +22,12 @@ class form1(qtw.QWidget, Ui_SS_form_1):
 
     @qtc.Slot()
     def button_change_text(self):
-        self.form = form2()
-        print ('instantiate form2')
-        # self.form.submitted.connect(self.lb_changedText.setText)
-        self.form.show()
-        print ('button-changed-text')
+        self.form2 = form2()
+        self.form2.setupUi(self.form2)
+        # print ('instantiate form2')
+        self.form2.submitted.connect(self.lb_changedText.setText)
+        self.form2.show()
+        # print ('button-changed-text')
 
 
 class form2(qtw.QWidget, Ui_SS_form_2):
@@ -36,12 +37,10 @@ class form2(qtw.QWidget, Ui_SS_form_2):
     def __init_(self):
         super().__init__()
         self.setupUi(self)
-
-
         self.pb_submitText.clicked.connect(self.button_submit)
 
-    @qtc.Slot()
     def button_submit(self):
+        print ('submit text pressed')
         self.submitted.emit(self.le_inputText.text())
         self.close()
 
