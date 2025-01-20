@@ -6,8 +6,10 @@ from PySide6 import QtGui as qtg
 from PySide6.QtGui import QIntValidator
 from ui_validationwindow import Ui_ValidationWindow
 from ctrlVariables import StringVar, IntVar, DoubleVar
+from PySide6.QtCore import Slot
 
 class MainWindow(qtw.QMainWindow, Ui_ValidationWindow):
+
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -29,7 +31,16 @@ class MainWindow(qtw.QMainWindow, Ui_ValidationWindow):
         self.le_2.setValidator(self.v2)
 
 
-        self.le_1.returnPressed.connect(self.lb_f1.setText)
+        self.le_1.textEdited.connect(self.lb_f1.setText)
+        # self.le_1.returnPressed.connect(self.hit)
+
+    @Slot()
+    def hit(self):
+        print('Hit')
+
+    @Slot()
+    def moveTo2(self):
+        print('Move to field 2')
 
     def vb_1(self):
         print('vb_1')
