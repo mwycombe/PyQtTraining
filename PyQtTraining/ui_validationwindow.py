@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'validationwindowUGhtPJ.ui'
+## Form generated from reading UI file 'validationwindowQSzuzd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.0
 ##
@@ -89,6 +89,27 @@ class Ui_ValidationWindow(object):
 
         self.verticalLayout_3.addWidget(self.le_3)
 
+        self.widget3 = QWidget(self.centralwidget)
+        self.widget3.setObjectName(u"widget3")
+        self.widget3.setGeometry(QRect(440, 50, 161, 131))
+        self.verticalLayout_4 = QVBoxLayout(self.widget3)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.lb_f1 = QLabel(self.widget3)
+        self.lb_f1.setObjectName(u"lb_f1")
+
+        self.verticalLayout_4.addWidget(self.lb_f1)
+
+        self.lb_f2 = QLabel(self.widget3)
+        self.lb_f2.setObjectName(u"lb_f2")
+
+        self.verticalLayout_4.addWidget(self.lb_f2)
+
+        self.lb_f3 = QLabel(self.widget3)
+        self.lb_f3.setObjectName(u"lb_f3")
+
+        self.verticalLayout_4.addWidget(self.lb_f3)
+
         ValidationWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(ValidationWindow)
         self.menubar.setObjectName(u"menubar")
@@ -111,5 +132,8 @@ class Ui_ValidationWindow(object):
         self.pb_1.setText(QCoreApplication.translate("ValidationWindow", u"Validate 1", None))
         self.pb_2.setText(QCoreApplication.translate("ValidationWindow", u"Validate 2", None))
         self.pb_3.setText(QCoreApplication.translate("ValidationWindow", u"Validate 3", None))
+        self.lb_f1.setText(QCoreApplication.translate("ValidationWindow", u"Field 1", None))
+        self.lb_f2.setText(QCoreApplication.translate("ValidationWindow", u"Field 2", None))
+        self.lb_f3.setText(QCoreApplication.translate("ValidationWindow", u"Field 3", None))
     # retranslateUi
 

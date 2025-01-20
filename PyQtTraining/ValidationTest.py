@@ -28,7 +28,8 @@ class MainWindow(qtw.QMainWindow, Ui_ValidationWindow):
         self.v2 = QIntValidator(0,9,self)
         self.le_2.setValidator(self.v2)
 
-        self.le_1.returnPressed.connect.
+
+        self.le_1.returnPressed.connect(self.lb_f1.setText)
 
     def vb_1(self):
         print('vb_1')
