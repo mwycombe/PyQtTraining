@@ -31,12 +31,22 @@ class MainWindow(qtw.QMainWindow, Ui_ValidationWindow):
         self.le_2.setValidator(self.v2)
 
 
+        # textEdited delivers text as it goes
+        # editingFinished delivers signal but no text!
         self.le_1.textEdited.connect(self.lb_f1.setText)
-        # self.le_1.returnPressed.connect(self.hit)
+        # self.le_1.editingFinished.connect(self.lb_f1.setText())
+        self.le_1.editingFinished.connect(self.ef)
+        self.le_1.returnPressed.connect(self.rt)
+
+        self.le_1.setFocus()
 
     @Slot()
-    def hit(self):
-        print('Hit')
+    def ef(self):
+        print('Finished')
+
+    @Slot()
+    def rt(self):
+        print('Return')
 
     @Slot()
     def moveTo2(self):
